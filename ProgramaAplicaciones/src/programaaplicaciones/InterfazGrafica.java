@@ -17,6 +17,7 @@ public class InterfazGrafica extends javax.swing.JFrame {
     public InterfazGrafica() {
         initComponents();
         transparenciaButton();
+        this.setLocationRelativeTo(null);
 
     }   
 
@@ -55,6 +56,11 @@ public class InterfazGrafica extends javax.swing.JFrame {
         jLabel3.setText("por código de colores");
 
         botonOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/programaaplicaciones/BotonOrden.png"))); // NOI18N
+        botonOrden.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonOrdenActionPerformed(evt);
+            }
+        });
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Ordenamiento y ");
@@ -125,6 +131,11 @@ public class InterfazGrafica extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void botonOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonOrdenActionPerformed
+        Ordenamiento orden = new Ordenamiento();
+        orden.setVisible(true);
+    }//GEN-LAST:event_botonOrdenActionPerformed
     public void transparenciaButton(){
         botonResistencia.setOpaque(false);
         botonResistencia.setContentAreaFilled(false);
