@@ -48,6 +48,11 @@ public class InterfazGrafica extends javax.swing.JFrame {
         jLabel1.setText("BIENVENIDO");
 
         botonResistencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/programaaplicaciones/resistor (1).png"))); // NOI18N
+        botonResistencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                botonResistenciaActionPerformed(evt);
+            }
+        });
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Calcular Valor de Resistencias");
@@ -136,6 +141,11 @@ public class InterfazGrafica extends javax.swing.JFrame {
         Ordenamiento orden = new Ordenamiento();
         orden.setVisible(true);
     }//GEN-LAST:event_botonOrdenActionPerformed
+
+    private void botonResistenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonResistenciaActionPerformed
+        Resistencias resist = new Resistencias();
+        resist.setVisible(true);
+    }//GEN-LAST:event_botonResistenciaActionPerformed
     public void transparenciaButton(){
         botonResistencia.setOpaque(false);
         botonResistencia.setContentAreaFilled(false);
