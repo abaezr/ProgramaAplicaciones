@@ -138,7 +138,7 @@ public class Ordenamiento extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         int n = Integer.parseInt(txtN.getText());
         int[][] matriz = new int[3][n];
-        capturaDatosMatriz(matriz,n);
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
