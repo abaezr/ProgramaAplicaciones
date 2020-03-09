@@ -47,7 +47,7 @@ public class InterfazGrafica extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("BIENVENIDO");
 
-        botonResistencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/programaaplicaciones/resistor (1).png"))); // NOI18N
+        botonResistencia.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/resistor (1).png"))); // NOI18N
         botonResistencia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonResistenciaActionPerformed(evt);
@@ -60,7 +60,7 @@ public class InterfazGrafica extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("por código de colores");
 
-        botonOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/programaaplicaciones/BotonOrden.png"))); // NOI18N
+        botonOrden.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/BotonOrden.png"))); // NOI18N
         botonOrden.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 botonOrdenActionPerformed(evt);

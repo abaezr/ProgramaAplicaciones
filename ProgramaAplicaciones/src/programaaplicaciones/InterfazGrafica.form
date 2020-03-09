@@ -120,7 +120,7 @@
         <Component class="javax.swing.JButton" name="botonResistencia">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/programaaplicaciones/resistor (1).png"/>
+              <Image iconType="3" name="/Imagenes/resistor (1).png"/>
             </Property>
           </Properties>
           <Events>
@@ -146,7 +146,7 @@
         <Component class="javax.swing.JButton" name="botonOrden">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/programaaplicaciones/BotonOrden.png"/>
+              <Image iconType="3" name="/Imagenes/BotonOrden.png"/>
             </Property>
           </Properties>
           <Events>
