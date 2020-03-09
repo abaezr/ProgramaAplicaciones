@@ -34,10 +34,10 @@ public class Ordenamiento extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         txtN = new javax.swing.JTextField();
-        btnIngresar = new javax.swing.JButton();
+        botonIngresar = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tableMatriz = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
+        botonOrdenar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -50,10 +50,10 @@ public class Ordenamiento extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Cantidad de Números:");
 
-        btnIngresar.setText("Ingresar");
-        btnIngresar.addActionListener(new java.awt.event.ActionListener() {
+        botonIngresar.setText("Ingresar");
+        botonIngresar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnIngresarActionPerformed(evt);
+                botonIngresarActionPerformed(evt);
             }
         });
 
@@ -67,10 +67,10 @@ public class Ordenamiento extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(tableMatriz);
 
-        jButton1.setText("Ordenar");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        botonOrdenar.setText("Ordenar");
+        botonOrdenar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                botonOrdenarActionPerformed(evt);
             }
         });
 
@@ -84,13 +84,13 @@ public class Ordenamiento extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton1))
+                        .addComponent(botonOrdenar))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(txtN, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(botonIngresar, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jLabel1))
                 .addContainerGap(29, Short.MAX_VALUE))
         );
@@ -103,14 +103,14 @@ public class Ordenamiento extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
                     .addComponent(txtN, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnIngresar))
+                    .addComponent(botonIngresar))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(49, 49, 49)
-                        .addComponent(jButton1)))
+                        .addComponent(botonOrdenar)))
                 .addContainerGap(262, Short.MAX_VALUE))
         );
 
@@ -128,18 +128,20 @@ public class Ordenamiento extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void btnIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnIngresarActionPerformed
+    private void botonIngresarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonIngresarActionPerformed
         // TODO add your handling code here:
         int n = Integer.parseInt(txtN.getText());
         int[][] matriz = new int[3][n];
         mostrarMatriz(matriz, n);
-    }//GEN-LAST:event_btnIngresarActionPerformed
+    }//GEN-LAST:event_botonIngresarActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        int n = Integer.parseInt(txtN.getText());
-        int[][] matriz = new int[3][n];
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
+    private void botonOrdenarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonOrdenarActionPerformed
+        int n = tableMatriz.getColumnCount();
+        int vector[] = new int[n];
+        for(int i=0;i<n;i++){
+            
+        }
+    }//GEN-LAST:event_botonOrdenarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -180,9 +182,11 @@ public class Ordenamiento extends javax.swing.JFrame {
          model.setRowCount(3);//Cantidad de Filas
          model.setColumnCount(n);//Cantidad de Columnas
     }
+    
     public void capturaDatosMatriz(int matriz[][],int n){
         for (int i=0;i<1;i++){
             for(int j=0;j<n;j++){
+            
             tableMatriz.getValueAt(i, j);
             }
         }
@@ -190,8 +194,8 @@ public class Ordenamiento extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnIngresar;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton botonIngresar;
+    private javax.swing.JButton botonOrdenar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
