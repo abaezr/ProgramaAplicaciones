@@ -52,5 +52,7 @@ public class CalculoResistencia{
 
     public CalculoResistencia() {
     }
+
+    
     
 }
