@@ -94,7 +94,7 @@ public class Resistencias extends javax.swing.JFrame {
             }
         });
 
-        jComboBoxTolerancia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tolerancia", "Dorado", "Plata", "Café", "Rojo", "Naranja", "Amarillo", "Verde", "Azul", "Violeta", "Gris", " " }));
+        jComboBoxTolerancia.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Tolerancia", "Dorado", "Plata", "Café", "Rojo", " " }));
         jComboBoxTolerancia.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBoxToleranciaActionPerformed(evt);
@@ -188,10 +188,9 @@ public class Resistencias extends javax.swing.JFrame {
                         .addComponent(jLabel5))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(banda2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(20, 20, 20)
-                        .addComponent(multiplicador, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(banda2, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(multiplicador, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 42, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jComboBoxBanda1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -325,18 +324,7 @@ public class Resistencias extends javax.swing.JFrame {
          this.tolerancia.setBackground(cafe); 
         if(jComboBoxTolerancia.getSelectedIndex()==4)
          this.tolerancia.setBackground(Color.red); 
-        if(jComboBoxTolerancia.getSelectedIndex()==5)
-         this.tolerancia.setBackground(Color.orange); 
-        if(jComboBoxTolerancia.getSelectedIndex()==6)
-         this.tolerancia.setBackground(Color.yellow); 
-        if(jComboBoxTolerancia.getSelectedIndex()==7)
-         this.tolerancia.setBackground(verde); 
-        if(jComboBoxTolerancia.getSelectedIndex()==8)
-         this.tolerancia.setBackground(Color.blue); 
-        if(jComboBoxTolerancia.getSelectedIndex()==9)
-         this.tolerancia.setBackground(violeta);     
-        if(jComboBoxTolerancia.getSelectedIndex()==10)
-         this.tolerancia.setBackground(Color.gray); 
+         
     }//GEN-LAST:event_jComboBoxToleranciaActionPerformed
 
     public static void main(String args[]) {
