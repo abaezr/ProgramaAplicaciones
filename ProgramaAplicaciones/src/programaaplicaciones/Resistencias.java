@@ -342,11 +342,8 @@ public class Resistencias extends javax.swing.JFrame {
     public static void main(String args[]) {
         
 
-        java.awt.EventQueue.invokeLater(new Runnable() {
-           
-            public void run() {
-                new Resistencias().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new Resistencias().setVisible(true);
         });
     }
 
